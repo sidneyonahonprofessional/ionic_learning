@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item *ngFor="let nav of navs"  [routerLink]="'/'+nav.path" [routerDirection]="nav.direction">
+    <ion-label>{{nav.title}} </ion-label>
+  </ion-item>
+</ion-content>
